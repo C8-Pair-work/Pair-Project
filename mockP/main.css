@@ -8,6 +8,8 @@
 body {
     min-height: 1500px;
     background: #0a2a43;
+    
+    
 }
 
 section {
@@ -85,4 +87,33 @@ nav ul li {
 
 nav ul li a {
     color: white;
+}
+
+.slider {
+width: 1500px;
+height: 700px;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+overflow: hidden;
+align-items: center;
+
+margin: auto;
+
+}
+
+.slides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 500%;
+    height: 500px;
+    display: flex;
+    align-self: center;
+       
+}
+
+.slides input {
+    display: none;
 }
