@@ -1,34 +1,65 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camping</title>
-    <link rel="stylesheet" href="main.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-</head>
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<body>
-    <nav>
-        <ul>
-            <li></li>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">logo</div>
+        <div class="menu">
+          <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">bla</a></li>
-            <li><a href="#">blaa</a></li>
-            <li><a href="#">blalala</a></li>
-        </ul>
-    </nav>
-    <section>
-        <img src="./Images/bg.jpg" id="bg" alt="">
-        <img src="./Images/moon.png" id="moon" alt="">
-        <img id="mountain" id="mountain" src="./Images/mountains.png" alt="">
-        <img src="./Images/road.png" id="road" alt="">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Subscribe</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div>
+      <section>
         <h2 id="text">CAMPER</h2>
-    </section>
+        <img src="./Images/bg.jpg" id="bg" alt="" />
+        <img src="./Images/moon.png" id="moon" alt="" />
+        <img id="mountain" id="mountain" src="./Images/mountains.png" alt="" />
+        <img src="./Images/road.png" id="road" alt="" />
+      </section>
+    </div>
 
-
+    <h2 id="sub">Subscription</h2>
+    <form action="">
+      <input type="text" placeholder="Firstname" />
+      <input type="text" placeholder="Lastname" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <input type="password" placeholder="Confirm Password" />
+      <div>
+        <input type="radio" name="gender" id="male" /><label for="male"
+          >Male</label
+        >
+        <input type="radio" name="gender" id="female" /><label for="female"
+          >Female</label
+        >
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
     <script src="app.js"></script>
-
-</body>
-
+  </body>
 </html>

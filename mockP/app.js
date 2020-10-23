@@ -11,6 +11,15 @@ window.addEventListener('scroll', function () {
     moon.style.left = -val * 0.5 + 'px'
     mountain.style.top = -val * 0.15 + 'px'
     road.style.top = val * 0.15 + 'px'
-    text.style.top = val * 1 + 'px'
+    text.style.top = val * 0.5 + 'px'
 
+})
+
+$(window).on("scroll", function(){
+    if($(window).scrollTop()){
+        $('nav').addClass('scroll');
+    }
+    else{
+        $('nav').removeClass('scroll');
+    }
 })
