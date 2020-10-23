@@ -1,9 +1,18 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camping</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Turret+Road:wght@500&display=swap"
@@ -16,12 +25,15 @@
 
 
 
-</head>
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<body>
-    <nav>
-        <ul>
-            <li></li>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">logo</div>
+        <div class="menu">
+          <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">bla</a></li>
             <li><a href="#">blaa</a></li>
@@ -111,8 +123,23 @@
         </div>
     </div>
 
+    <h2 id="sub">Subscription</h2>
+    <form action="">
+      <input type="text" placeholder="Firstname" />
+      <input type="text" placeholder="Lastname" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <input type="password" placeholder="Confirm Password" />
+      <div>
+        <input type="radio" name="gender" id="male" /><label for="male"
+          >Male</label
+        >
+        <input type="radio" name="gender" id="female" /><label for="female"
+          >Female</label
+        >
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
     <script src="app.js"></script>
-
-</body>
-
+  </body>
 </html>
