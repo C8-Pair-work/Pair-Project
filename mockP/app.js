@@ -13,4 +13,18 @@ window.addEventListener('scroll', function () {
     road.style.top = val * 0.15 + 'px'
     text.style.top = val * 1 + 'px'
 
-})
+});
+
+
+newFunction()
+
+function newFunction() {
+    var counter = 1
+    setInterval(function () {
+        document.getElementById('radio' + counter).checked = true
+        counter++
+        if (counter > 6) {
+            counter = 1
+        }
+    }, 5000)
+}
