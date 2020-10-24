@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Form Validation - #073 of #100Days100Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" placeholder="Username" id="username" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input type="email" placeholder="email@email.com" id="email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password</label>
+          <input type="password" placeholder="Password" id="password" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Confirm Password</label>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="password2"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+      <a href="../index.html">
+        <button><i class="fas fa-home"></i>Home</button>
+      </a>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
