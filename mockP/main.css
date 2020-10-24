@@ -45,6 +45,11 @@ nav ul li a {
   text-transform: uppercase;
 }
 
+nav a:hover {
+  color: #ff9f1c;
+  font-weight: bold;
+}
+
 .logo {
   position: fixed;
   float: left;
@@ -55,31 +60,11 @@ nav ul li a {
 }
 
 nav.scroll ul {
-  background: #000;
-}
-
-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#text {
-  position: relative;
-  color: white;
-  font-size: 10em;
-  z-index: 1;
-  background: none;
-  /* min-height: 1500px; */
   background: #0a2a43;
 }
 
 section {
-  z-index: -1;
+  z-index: 0;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -90,13 +75,13 @@ section {
 }
 
 #text {
-  color: black;
+  color: white;
   position: relative;
-  /* color: white; */
-  font-size: 10em;
+  font-size: 7em;
   z-index: 1;
   background: none;
-  mix-blend-mode: hard-light;
+  text-align: center;
+  opacity: 1;
 }
 
 section::before {
@@ -144,86 +129,6 @@ header::after {
 .container {
   width: 80%;
   margin: 0 auto;
-}
-
-nav a:hover {
-  color: rgba(23, 211, 201, 0.945);
-}
-
-#sub {
-  text-align: center;
-  color: white;
-}
-form {
-  margin: 20px auto;
-  width: 320px;
-  color: white;
-  align-content: center;
-}
-
-input {
-  padding: 10px;
-  font-size: inherit;
-}
-
-input[type="text"] {
-  display: block;
-  margin-bottom: 25px;
-  width: 100%;
-  border: 2px solid steelblue;
-  background: #faf6d9;
-}
-
-input[type="password"] {
-  display: block;
-  margin-bottom: 25px;
-  width: 100%;
-  border: 2px solid steelblue;
-  background: #faf6d9;
-}
-
-input[type="email"] {
-  display: block;
-  margin-bottom: 25px;
-  width: 100%;
-  border: 2px solid steelblue;
-  background: #faf6d9;
-}
-
-input[type="radio"] {
-  margin: 0 8px 25px 18px;
-}
-input[type="radio"]:first-child {
-  margin-left: 0;
-}
-
-input[type="submit"] {
-  width: 100%;
-  height: 45px;
-  border: none;
-  background: steelblue;
-  color: white;
-}
-
-input:focus {
-  background: white;
-}
-
-input[type="radio"]:checked + label {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-input[type="submit"]:focus {
-  width: 100%;
-  height: 45px;
-  border: solid steelblue;
-  background: white;
-  color: steelblue;
-}
-
-nav ul li a {
-  color: white;
 }
 
 .slider {
@@ -451,7 +356,7 @@ nav ul li a {
   color: white;
   text-align: center;
   transition: 0.5s;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .content a {
